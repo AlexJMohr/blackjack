@@ -220,12 +220,12 @@ fn main() {
 
             if dealer_best_score > 21 {
                 println!("Dealer busts! {}!", "You win!".green());
-                money += bet * 3 / 2;
+                money += bet * 2;
             } else if dealer_best_score > player_best_score {
                 println!("{}", "Dealer wins!".red());
             } else if dealer_best_score < player_best_score {
                 println!("{}", "You win!".green());
-                money += bet * 3 / 2;
+                money += bet * 2;
             } else {
                 println!("{} Bet is returned.", "Push!".yellow());
                 money += bet;
